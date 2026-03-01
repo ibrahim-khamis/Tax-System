@@ -15,7 +15,7 @@ const Dashboard = () => {
     try {
       const res = await axios.get(
 
-        "http://127.0.0.1:8000/api/dashboard-stats/",
+        "https://tax-system-a4we.onrender.com/api/dashboard-stats/",
         {
         
           headers: {

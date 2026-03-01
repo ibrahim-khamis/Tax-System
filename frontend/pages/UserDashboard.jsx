@@ -30,7 +30,7 @@ const UserDashboard = () => {
     return;
   }
   try {
-    const res = await axios.get("http://127.0.0.1:8000/api/profile/", {
+    const res = await axios.get("https://tax-system-a4we.onrender.com/api/profile/", {
       headers: { Authorization: `Token ${token}` },
     });
     setUser(res.data);  // res.data ina user + businesses + payments
@@ -57,7 +57,7 @@ const UserDashboard = () => {
 
     try {
       await axios.post(
-        "http://127.0.0.1:8000/",
+        "https://tax-system-a4we.onrender.com/",
         {
           business: business.id,
           amount: parseFloat(amount),
