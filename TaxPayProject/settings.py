@@ -34,7 +34,6 @@ ALLOWED_HOSTS = [
     '[::1]',
 ]
 CORS_ALLOWED_ORIGINS = [
-    '*',
     "http://localhost:5173",
     "https://tax-management-system-phqf.vercel.app",
     "https://*.vercel.app"
