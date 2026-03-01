@@ -35,10 +35,10 @@ ALLOWED_HOSTS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://tax-management-system-phqf.vercel.app",
+    "https://tax-system-utnx.vercel.app",
     "https://*.vercel.app"
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True
 # Your frontend's local development URL
 
 
@@ -112,7 +112,7 @@ DATABASES = {"default": dj_database_url.config(default=DATABASE_URL)}
 # settings.py
 CSRF_TRUSTED_ORIGINS = [
     'https://tax-management-system-cuoz.onrender.com',
-    'https://*.vercel.app'
+    'https://tax-system-utnx.vercel.app'
 ]
 
 
