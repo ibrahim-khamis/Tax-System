@@ -1,0 +1,137 @@
+/* Container */
+.users-page-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.users-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.users-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Buttons container (kulia) */
+.buttons-right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn, .back-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.add-btn { background-color: #27ae60; color: #fff; }
+.add-btn:hover { background-color: #219150; }
+
+.back-btn { background-color: #34495e; color: #fff; }
+.back-btn:hover { background-color: #2c3e50; }
+
+/* Table */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: fixed; /* fixed layout helps fit columns */
+}
+
+.users-table th,
+.users-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.users-table th {
+  background-color: #f4f6f9;
+  font-weight: 600;
+}
+
+/* Reduce width of specific columns */
+.users-table th:nth-child(1),   /* # */
+.users-table td:nth-child(1) {
+  width: 40px;
+}
+
+.users-table th:nth-child(2),   /* First Name */
+.users-table td:nth-child(2) {
+  width: 120px;
+}
+
+.users-table th:nth-child(3),   /* Last Name */
+.users-table td:nth-child(3) {
+  width: 120px;
+}
+
+/* Actions column */
+.users-table td.actions {
+  width: 220px;      /* enough space for 3 buttons */
+}
+
+/* Actions buttons */
+.actions {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+.actions button {
+  padding: 6px 10px;    /* compact */
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  min-width: 60px;      /* uniform small width */
+  font-weight: 500;
+}
+
+.view { background-color: #3498db; color: #fff; }
+.view:hover { background-color: #2980b9; }
+
+.edit { background-color: #f1c40f; color: #fff; }
+.edit:hover { background-color: #d4ac0d; }
+
+.delete { background-color: #e74c3c; color: #fff; }
+.delete:hover { background-color: #c0392b; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .buttons-right {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .users-table {
+    table-layout: auto;
+  }
+
+  .users-table td.actions {
+    width: auto; /* responsive on small screens */
+    flex-wrap: wrap;
+  }
+}
