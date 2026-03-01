@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-7@qpausk1&m_hubwkqy87srrk=uy6rvtz39e*1z&@bxv%rwe^0
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '*',
     'tax-management-system-34cb.onrender.com',
     'localhost',
     '127.0.0.1',
